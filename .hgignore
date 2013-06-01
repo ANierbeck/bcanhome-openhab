@@ -2,36 +2,12 @@ syntax: regexp
 /\/target/
 glob:targetplatform/bundles/
 
-syntax: regexp
-^bundles/core/org\.openhab\.core\.library/target$
-syntax: regexp
-^bundles/core/org\.openhab\.core\.console/target$
-syntax: regexp
-^bundles/config/misterhouse/target$
-syntax: regexp
-^bundles/binding/knx/core/target$
-syntax: regexp
-^products/org\.openhab\.designer/target$
-syntax: regexp
-^bundles/core/org\.openhab\.core\.monitor/target$
-syntax: regexp
-^bundles/core/org\.openhab\.core\.rules/target$
-syntax: regexp
-^bundles/designer/org\.openhab\.designer\.core/target$
-syntax: regexp
-^bundles/designer/org\.openhab\.designer\.ui/target$
-syntax: regexp
-^bundles/model/org\.openhab\.model\.sitemap/target$
-syntax: regexp
-^bundles/model/org\.openhab\.model\.sitemap\.ui/target$
-syntax: regexp
-^bundles/ui/org\.openhab\.ui\.webapp/target$
-syntax: regexp
-^bundles/binding/knx/calimero/target$
-syntax: regexp
-/target$
-syntax: regexp
-/src-gen/
+syntax: glob
+.settings
+.project
+target
+src-gen
+
 syntax: regexp
 ^bundles/model/org\.openhab\.model\.item/\.antlr-generator-3\.2\.0\.jar$
 syntax: regexp
@@ -85,81 +61,3 @@ syntax: regexp
 ^distribution/openhabhome/etc/db4o$
 syntax: regexp
 ^distribution/openhabhome/etc/rrd4j$
-bundles/\.project
-bundles/\.settings
-bundles/binding/\.project
-bundles/binding/\.settings
-bundles/config/\.project
-bundles/config/\.settings
-bundles/core/\.project
-bundles/core/\.settings
-bundles/designer/\.project
-bundles/designer/\.settings
-bundles/io/\.project
-bundles/io/\.settings
-bundles/library/\.project
-bundles/library/\.settings
-bundles/model/\.project
-bundles/model/\.settings
-bundles/persistence/\.project
-bundles/persistence/\.settings
-bundles/ui/\.project
-bundles/ui/\.settings
-bundles/ui/org\.openhab\.ui\.webapp/\.project
-bundles/ui/org\.openhab\.ui\.webapp/\.settings
-bundles/ui/org\.openhab\.ui\.test/\.project
-bundles/ui/org\.openhab\.ui\.test/\.settings
-bundles/ui/org\.openhab\.ui/\.project
-bundles/ui/org\.openhab\.ui/\.settings
-bundles/persistence/org\.openhab\.persistence\.sql\.mysql/\.project
-bundles/persistence/org\.openhab\.persistence\.sql\.mysql/\.settings
-bundles/persistence/org\.openhab\.persistence\.sql/\.project
-bundles/persistence/org\.openhab\.persistence\.sql/\.settings
-bundles/persistence/org\.openhab\.persistence\.sense/\.project
-bundles/persistence/org\.openhab\.persistence\.sense/\.settings
-bundles/persistence/org\.openhab\.persistence\.rrd4j/\.project
-bundles/persistence/org\.openhab\.persistence\.rrd4j/\.settings
-bundles/persistence/org\.openhab\.persistence\.logging/\.project
-bundles/persistence/org\.openhab\.persistence\.logging/\.settings
-bundles/persistence/org\.openhab\.persistence\.exec\.test/\.project
-bundles/persistence/org\.openhab\.persistence\.exec\.test/\.settings
-bundles/persistence/org\.openhab\.persistence\.exec/\.project
-bundles/persistence/org\.openhab\.persistence\.exec/\.settings
-bundles/persistence/org\.openhab\.persistence\.db4o\.test/\.project
-bundles/persistence/org\.openhab\.persistence\.db4o\.test/\.settings
-bundles/persistence/org\.openhab\.persistence\.db4o/\.project
-bundles/persistence/org\.openhab\.persistence\.db4o/\.settings
-bundles/persistence/org\.openhab\.persistence\.cosm/\.project
-bundles/persistence/org\.openhab\.persistence\.cosm/\.settings
-bundles/model/org\.openhab\.model\.sitemap\.ui/\.project
-bundles/model/org\.openhab\.model\.sitemap\.ui/\.settings
-bundles/model/org\.openhab\.model\.sitemap/\.project
-bundles/model/org\.openhab\.model\.sitemap/\.settings
-bundles/model/org\.openhab\.model\.script\.ui/\.project
-bundles/model/org\.openhab\.model\.script\.ui/\.settings
-bundles/model/org\.openhab\.model\.script/\.project
-bundles/model/org\.openhab\.model\.script/\.settings
-bundles/model/org\.openhab\.model\.rule\.ui/\.project
-bundles/model/org\.openhab\.model\.rule\.ui/\.settings
-bundles/model/org\.openhab\.model\.core/\.project
-bundles/model/org\.openhab\.model\.core/\.settings
-bundles/model/org\.openhab\.model\.item/\.project
-bundles/model/org\.openhab\.model\.item/\.settings
-bundles/model/org\.openhab\.model\.item\.ui/\.project
-bundles/model/org\.openhab\.model\.item\.ui/\.settings
-bundles/model/org\.openhab\.model\.persistence/\.project
-bundles/model/org\.openhab\.model\.persistence/\.settings
-bundles/model/org\.openhab\.model\.rule/\.project
-bundles/model/org\.openhab\.model\.rule/\.settings
-bundles/model/org\.openhab\.model\.persistence\.ui/\.project
-bundles/model/org\.openhab\.model\.persistence\.ui/\.settings
-bundles/library/org\.openhab\.library\.tel/\.project
-bundles/library/org\.openhab\.library\.tel/\.settings
-bundles/designer/org\.openhab\.designer\.ui/\.project
-bundles/designer/org\.openhab\.designer\.ui/\.settings
-bundles/designer/org\.openhab\.designer\.core/\.project
-bundles/designer/org\.openhab\.designer\.core/\.settings
-bundles/core/org\.openhab\.core/\.project
-bundles/core/org\.openhab\.core/\.settings
-bundles/config/org\.openhab\.config\.core/\.project
-bundles/config/org\.openhab\.config\.core/\.settings
